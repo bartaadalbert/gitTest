@@ -1,0 +1,13 @@
+----------------------------------------------------------------
+Sun Jul 07 03:33:38 EEST 2019:
+Booting Derby version The Apache Software Foundation - Apache Derby - 10.11.1.2 - (1629631): instance a816c00e-016b-c9d9-bade-00000677f770 
+on database directory /Users/adalbertbarta/NetBeansProjects/iPhoneBook/newmyDB with class loader sun.misc.Launcher$AppClassLoader@42a57993 
+Loaded from file:/Users/adalbertbarta/NetBeansProjects/iPhoneBook/dist/run81893853/lib/derby.jar
+java.vendor=Oracle Corporation
+java.runtime.version=1.8.0_171-b11
+user.dir=/Users/adalbertbarta/NetBeansProjects/iPhoneBook
+os.name=Mac OS X
+os.arch=x86_64
+os.version=10.14.5
+derby.system.home=null
+Database Class Loader started - derby.database.classpath=''

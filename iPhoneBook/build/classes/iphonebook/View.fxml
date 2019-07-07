@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="anchorPane" fx:id="anchorPane" prefHeight="650.0" prefWidth="700.0" style="-fx-background-color: gainsboro;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="iphonebook.ViewController">
+    <children>
+        <Label layoutX="216.0" layoutY="11.0" minHeight="16" minWidth="69" text="Telephone Book" textAlignment="CENTER">
+         <font>
+            <Font name="Monaco" size="28.0" />
+         </font></Label>
+      <SplitPane id="splitPane" fx:id="splitPane" dividerPositions="0.3022922636103152" layoutY="60.0" prefHeight="591.0" prefWidth="700.0" style="-fx-background-color: gainsboro;">
+        <items>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="590.0" prefWidth="156.0">
+               <children>
+                  <StackPane id="menupane" fx:id="menupane" layoutX="-47.0" layoutY="14.0" prefHeight="590.0" prefWidth="147.0" style="-fx-background-color: gainsboro;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+               </children>
+            </AnchorPane>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="590.0" prefWidth="429.0">
+               <children>
+                  <Pane id="contactpane" fx:id="contactpane" layoutX="14.0" prefHeight="590.0" prefWidth="443.0" style="-fx-background-color: gainsboro;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <children>
+                        <TableView id="table" fx:id="table" editable="true" prefHeight="451.0" prefWidth="483.0" style="-fx-background-color: gainsboro;">
+                            <placeholder>
+                                <Label text="No data in this Table" />
+                            </placeholder>
+                          <columns>
+                            
+                          </columns>
+                        </TableView>
+                        <TextField id="inputLastName" fx:id="inputLastName" layoutX="138.0" layoutY="461.0" promptText="Barta" />
+                        <TextField id="inputFirstName" fx:id="inputFirstName" layoutX="138.0" layoutY="499.0" promptText="Adalbert" />
+                        <TextField id="inputEmail" fx:id="inputEmail" layoutX="138.0" layoutY="537.0" promptText="adalbertbarta@mail.com" />
+                        <Label layoutX="46.0" layoutY="466.0" text="Last Name" />
+                        <Label layoutX="46.0" layoutY="504.0" text="First Name" />
+                        <Label layoutX="79.0" layoutY="542.0" text="email" />
+                        <Button id="send" fx:id="send" layoutX="340.0" layoutY="500.0" mnemonicParsing="false" onAction="#addContact" text="Add Users" />
+                     </children>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <effect>
+                        <InnerShadow />
+                     </effect>
+                  </Pane>
+                  <Pane id="exportpane" fx:id="exportpane" prefHeight="590.0" prefWidth="443.0" style="-fx-background-color: gainsboro;" visible="false" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <children>
+                        <Button id="exportbutton" fx:id="exportbutton" layoutX="170.0" layoutY="268.0" mnemonicParsing="false" onAction="#exportList" text="Export to PDF" />
+                        <TextField id="exporttextfield" fx:id="exporttextfield" alignment="CENTER" layoutX="138.0" layoutY="217.0" promptText="Name of your export" />
+                        <Text layoutX="97.0" layoutY="85.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Exporting date to PDF">
+                           <font>
+                              <Font size="24.0" />
+                           </font>
+                        </Text>
+                        <Label id="exportlabel" fx:id="exportlabel" layoutX="134.0" layoutY="168.0" text="You need make name of file:" />
+                     </children>
+                  </Pane>
+               </children>
+            </AnchorPane>
+        </items>
+      </SplitPane>
+    </children>
+</AnchorPane>
