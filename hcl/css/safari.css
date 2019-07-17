@@ -1,0 +1,7 @@
+.flipper {
+    transform: rotateY(180deg);
+}
+
+.flipper.escape {
+    /*transform: none;*/
+}

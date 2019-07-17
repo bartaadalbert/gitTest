@@ -1,0 +1,35 @@
+html,body,p,li,ul,ol,h1,h2,h3,h4,h5,h6,div {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    color: black;
+}
+
+body {
+    background-color: hsl(0,0%,30%);
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+div,h1 {
+    z-index: 11;
+}
+
+img {
+    max-width: 100%;
+}
+
+input {
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+h2,h3,h4,h5,h6 {
+    color: inherit;
+    font-size: inherit;
+    font-weight: inherit;
+}
+
